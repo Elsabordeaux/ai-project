@@ -1,3 +1,55 @@
 body {
-  background: teal;
+  background: rgb(186, 240, 240);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.container {
+  background: whitesmoke;
+  max-width: 600px;
+  border-radius: 20px;
+  margin: 60px auto;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  padding: 40px;
+  font-size: 38px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-left: 5px;
+  background-color: rgb(186, 240, 240);
+  border: 1px, solid, rgb(99, 240, 240);
+}
+
+input {
+  margin-bottom: 40px;
+}
+
+.generated-text {
+  padding: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(99, 240, 240);
 }
