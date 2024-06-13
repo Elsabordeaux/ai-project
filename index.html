@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Project</title>
   </head>
   <body>
@@ -12,7 +14,7 @@
         <h1>Welcome to my AI project</h1>
       </header>
       <main>
-        <form>
+        <form id="search-form">
           <input
             type="text"
             placeholder="Enter a subject"
@@ -22,7 +24,7 @@
           />
           <input type="submit" class="search-button" />
         </form>
-        <div class="generated-text"><em>Information goes here</em></div>
+        <div class="generated-text" id="generated-text"><em></em></div>
       </main>
       <footer>
         This AI project was coded by
