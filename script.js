@@ -16,6 +16,10 @@ function generateInformation(event) {
   let context = `You a knowledgeable naturalist of animals and can give short, clear answers of no more that 4 lines of text, provided in basic HTML format. The scientific name should be displayed like a title above the rest of the information with a <div> seperating it from the rest of the text,it should be displayed with no capital letters and in bold italic, with the rest of the information below in a paragraph. Also if possible display an emoji of the animal (or closest animal)`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let aiTextArea = document.querySelector("#generated-text");
+  aiTextArea.classList.remove("emojis");
+  aiTextArea.innerHTML = `<span class="emojis">searching 🦘 🐍 🐅 🐋 searching</span>`;
+
   axios.get(apiUrl).then(displayInfo);
 }
 
