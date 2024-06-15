@@ -10,11 +10,13 @@ body {
   border-radius: 20px;
   margin: 60px auto;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 h1 {
-  padding: 40px;
+  padding: 35px, 20px 35px;
   font-size: 38px;
+  margin-top: 30px;
 }
 
 .search-input {
@@ -55,6 +57,7 @@ a {
 }
 
 .emojis {
+  margin-bottom: 20px;
   bottom: 55%;
   position: absolute;
   -webkit-animation: linear infinite;
